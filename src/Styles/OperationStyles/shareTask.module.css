@@ -1,0 +1,342 @@
+@import "../root.css";
+
+
+
+.shareTaskNormal{
+  width: 100%;
+  height: 100vh;
+
+}
+
+.appName{
+  font-family: Poppins;
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+  
+
+}
+.icon{
+  width: 24px;
+  height: 24px;
+  padding-right: 20px;
+
+}
+.shareDisplayTask{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+
+}
+.taskContent{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+  width: 50%;
+  border: 2px solid #edf5fe;
+  border-radius: 12px;
+
+}
+
+.taskContent h1 {
+  margin: 10px 0px;
+  font-family: Poppins;
+  color: #000000;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.taskContent h3 {
+  font-family: Inter;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.94px;
+  margin-top: 20px;
+}
+.priorityStyle{
+  display: flex;
+
+}
+/* .priority{
+  
+
+} */
+.priorityName{
+  font-family: Poppins;
+  color: #707070;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+  margin-left: 5px;
+
+}
+.highPriority{
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #ff2473;
+
+}
+
+.moderatePriority{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #18b0ff;
+
+}
+.lowPriority{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #63c05b;
+
+}
+.checkedListConatiner{
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 8px;
+  border-radius: 4px;
+
+}
+
+.checkedListConatiner::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  /* Height of horizontal scrollbar */
+}
+
+.checkedListConatiner::-webkit-scrollbar-track {
+  background: none;
+  /* Background of the scrollbar track */
+  border-radius: 8px;
+}
+
+.checkedListConatiner::-webkit-scrollbar-thumb {
+  background-color: #9cb7c5;
+  /* Color of the scrollbar handle */
+  border-radius: 10px;
+  border: 1px, 0px, 0px, 0px;
+  /* Padding around the scrollbar handle */
+}
+
+
+.checkedListData{
+  font-family: Inter;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  margin: 10px 0px;
+  list-style-type: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  /* Break long words if needed */
+  word-break: break-all;
+
+}
+.checkBox{
+  margin-right: 10px;
+
+}
+.dueDate{
+  font-family: Poppins;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 10px;
+
+}
+
+.dueDate strong {
+  margin-right: 10px;
+}
+
+.dueDate button {
+  border: none;
+  border-radius: 8px;
+  width: 78px;
+  height: 32px;
+  color: #ffffff;
+  background-color: #cf3636;
+}
+
+/* .shareTaskOnMobile {} */
+
+/* responsive  */
+
+@media (max-width:768px){
+  .appName{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    padding-right: 20px;
+  }
+
+  .shareDisplayTask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+  }
+  .taskContent{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    width: 50%;
+    border: 2px solid #edf5fe;
+    border-radius: 10px;
+  }
+
+  .taskContent h1 {
+    margin: 10px 0px;
+    font-family: Poppins;
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .taskContent h3 {
+    font-family: Inter;
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    margin-top: 20px;
+  }
+
+    .priorityStyle {
+      display: flex;
+    }
+  
+    .priorityName {
+      font-family: Poppins;
+      color: rgba(112, 112, 112, 1);
+      font-weight: 500;
+      font-size: 8px;
+      line-height: 12px;
+      margin-left: 5px;
+    }
+  
+    .highPriority {
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      background-color: rgba(255, 36, 115, 1);
+    }
+  
+    .moderatePriority {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: rgba(24, 176, 255, 1);
+    }
+  
+    .lowPriority {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: rgba(99, 192, 91, 1);
+    }
+
+    .checkedListConatiner {
+      max-height: 160px;
+      overflow-y: auto;
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    .checkedListConatiner::-webkit-scrollbar {
+      height: 8px;
+      width: 5px;
+      /* Height of horizontal scrollbar */
+    }
+
+    .checkedListConatiner::-webkit-scrollbar-track {
+      background: none;
+      /* Background of the scrollbar track */
+      border-radius: 10px;
+    }
+
+    .checkedListConatiner::-webkit-scrollbar-thumb {
+      background-color: rgba(156, 183, 197, 1);
+      /* Color of the scrollbar handle */
+      border-radius: 10px;
+      border: 1px, 0px, 0px, 0px;
+      /* Padding around the scrollbar handle */
+    }
+
+    .checkedListData{
+      font-family: Inter;
+      color: rgba(0, 0, 0, 1);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16.9px;
+      margin: 10px 0px;
+      list-style-type: none;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid rgba(226, 226, 226, 1);
+      border-radius: 12px;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      /* Break long words if needed */
+      word-break: break-all;
+
+    }
+
+    .checkBox{
+      margin-right: 10px;
+
+    }
+
+    .dueDate{
+      font-family: Poppins;
+      color: rgba(0, 0, 0, 1);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      margin-top: 10px;
+
+    }
+
+    .dueDate strong {
+      margin-right: 10px;
+    }
+
+    .dueDate button {
+      border: none;
+      border-radius: 8px;
+      width: 69px;
+      height: 28px;
+      color: rgba(255, 255, 255, 1);
+      background-color: rgba(207, 54, 54, 1);
+    }
+
+}

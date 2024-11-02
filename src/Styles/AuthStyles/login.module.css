@@ -1,0 +1,319 @@
+@import '../root.css';
+
+.loginPg{
+  height:100vh;
+  background: #ffffff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.heading{
+  font-family:Open Sans;
+  color:#343434;
+  font-weight:600;
+  font-size:2.5vw;
+  line-height:5vw;
+
+}
+
+.formData{
+  height:40vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top:5vw;
+
+}
+
+
+
+.inputEmail{
+  height: 8vh;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  border: 1.38px solid #d0d0d0;
+  border-radius: 11.03px;
+  padding: 0 10px;
+ 
+
+}
+
+.emailField, .passwordField {
+  width: 20vw;
+  border: none;
+  font-family: Open Sans;
+  color: rgba(130, 130, 130, 1);
+  outline: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26.28px;
+  
+  
+}
+.passwordField
+{
+  /* margin-left: -60px; */
+  flex: 1;
+  /* Take up remaining space between the lock and eye icons */
+  border: none;
+  font-family: Open Sans;
+  color: rgba(130, 130, 130, 1);
+  outline: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26.28px;
+  margin-left: -10vw;
+  /* Adds some space between the lock icon and input */
+}
+
+.icon{
+  margin-left:8px;
+  color: #828282;
+  margin-right:8px;
+  cursor:pointer;
+}
+
+
+.errMsg{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #db371f;
+  margin-top: 5px;
+  margin-left:5px;
+
+}
+
+.inputPassword{
+  height: 8vh;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.38px solid #d0d0d0;
+  border-radius: 11.03px;
+  padding: 0 10px;
+    /* Add padding to make room inside */
+  margin-top: 2vw;
+}
+
+
+
+.eyeBtn{
+  /* Align eye icon to the far right */
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.authBtn{
+  margin-top:2vw;
+  width: 37vw;
+  height: 45px;
+  border-radius: 50px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 19.29px;
+  line-height: 26.28px;
+  background-color: #17a2b8;
+  color: #ffffff;
+  border: 1px solid #17A2B8;
+  cursor: pointer;
+  
+
+}
+
+.para{
+  margin-bottom: 20px;
+  color: #828282;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26.28px;
+  text-align: center;
+
+}
+
+.registerBtn{
+  /* margin-top: 2vw; */
+  width: 37vw;
+  height: 45px;
+  border-radius: 50px;
+  font-family: Open Sans;
+  font-weight: 500;
+  font-size: 19.29px;
+  line-height: 26.28px;
+  background-color: #ffffff;
+  color: #17A2B8;
+  border: 1px solid #17A2B8;
+  cursor: pointer;
+
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-webkit-clear-button,
+input[type="password"]::-webkit-reveal-button {
+  display: none;
+}
+
+input[type="password"]::-moz-clear,
+input[type="password"]::-moz-reveal {
+  display: none;
+}
+
+/* Existing desktop styles remain unchanged above */
+
+@media (max-width: 768px ) {
+  .loginPg {
+    height: auto;
+    padding: 5vw 2vw;
+  }
+
+  .heading {
+    font-size: 5vw;
+    line-height: 6vw;
+    text-align: center;
+  }
+
+  .formData {
+    height: auto;
+    margin-top: 3vw;
+    padding: 0 2vw;
+  }
+
+  .inputEmail,
+  .inputPassword {
+    width: 70vw;
+    height: 6vh;
+    padding: 0 8px;
+    margin-top: 1.5vw;
+  }
+
+  .emailField,
+  .passwordField {
+    width: 60vw;
+    font-size: 3.5vw;
+    line-height: 5vw;
+  }
+
+  .authBtn,
+  .registerBtn {
+    width: 70vw;
+    height: 40px;
+    font-size: 4vw;
+    margin-top: 3vw;
+  }
+
+  .para {
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+  }
+
+  .errMsg {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginPg {
+    padding: 5vw 3vw;
+  }
+
+  .heading {
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+
+  .formData {
+    padding: 0 3vw;
+  }
+
+  .inputEmail,
+  .inputPassword {
+    width: 80vw;
+    height: 5.5vh;
+    padding: 0 6px;
+  }
+
+  .emailField,
+  .passwordField {
+    width: 60vw;
+    font-size: 4vw;
+  }
+
+  .authBtn,
+  .registerBtn {
+    width: 80vw;
+    height: 45px;
+    font-size: 4.5vw;
+  }
+
+  .para {
+    font-size: 4vw;
+  }
+
+  .errMsg {
+    font-size: 3.5vw;
+  }
+}
+
+/* Responsive styles for 769px to 900px */
+@media (min-width: 769px) and (max-width: 900px) {
+  .loginPg {
+    padding: 4vw 2vw;
+  }
+
+  .heading {
+    font-size: 5vw;
+    line-height: 6vw;
+    text-align: center;
+  }
+
+  .formData {
+    width: 90%;
+    margin-top: 3vw;
+  }
+
+  .inputEmail,
+  .inputPassword {
+    width: 80%;
+    height: 6vh;
+    margin-top: 1.5vw;
+    padding: 0 8px;
+  }
+
+  .emailField,
+  .passwordField {
+    width: 75%;
+    font-size: 3.5vw;
+    line-height: 5vw;
+  }
+
+  .authBtn,
+  .registerBtn {
+    width: 85%;
+    height: 45px;
+    font-size: 4vw;
+    margin-top: 2vw;
+  }
+
+  .para {
+    font-size: 2.5vw;
+    line-height: 4.5vw;
+  }
+
+  .errMsg {
+    font-size: 3vw;
+  }
+}
+

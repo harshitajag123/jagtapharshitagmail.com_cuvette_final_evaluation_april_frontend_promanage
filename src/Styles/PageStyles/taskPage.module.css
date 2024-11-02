@@ -1,0 +1,186 @@
+@import '../root.css';
+
+.mainPg{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+ 
+  
+    
+}
+
+.navBar{
+  height: 100vh;
+  width: 20%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 1);
+  border-right: 1px solid #edf5fe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+
+}
+
+.heading{
+  font-family: Poppins;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.6vw;
+  line-height: 24px;
+  margin-bottom: 100px;
+  padding: 0px 30px 30px 30px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+
+}
+.icon,.logIcon{
+  width: 24px;
+  height: 24px;
+  padding-right: 20px;
+  
+
+}
+
+.list{
+  display: flex;
+  align-items: center;
+  font-family: Poppins;
+  color: #707070;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 0px 15px 30px;
+  list-style-type: none;
+  margin: 20px 0px;
+  cursor: pointer;
+
+}
+
+.list:hover {
+  background-color: #4391ed1a;
+  color: #000000;
+}
+.selected{
+  background-color: #4391ed1a;
+  color: #000000;
+
+}
+
+.logoutDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logoutBtn{
+  display: flex;
+  align-items: center;
+  color: rgba(207, 54, 54, 1);
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  cursor:pointer;
+
+}
+
+
+
+.taskPlace{
+  height: 100vh;
+  
+  width: 80%;
+  flex: 1;
+  /* Take up remaining space */
+  overflow-y: auto;
+  /* Scroll if content overflows */
+  
+
+}
+
+/* Responsive Styles */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .navBar {
+    width: 25%;
+  }
+
+  .taskPlace {
+    width: 75%;
+  }
+
+  .heading {
+    font-size: 1.8vw;
+    padding: 0 20px;
+  }
+
+  .list {
+    font-size: 15px;
+  }
+
+  .logoutBtn {
+    font-size: 14px;
+  }
+}
+
+/* For smaller tablets and large mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+  .navBar {
+    width: 30%;
+  }
+
+  .taskPlace {
+    width: 70%;
+  }
+
+  .heading {
+    font-size: 4vw;
+    padding: 0 15px;
+  }
+
+  .list {
+    font-size: 4vw;
+    padding: 10px 0 10px 20px;
+  }
+
+  .logoutBtn {
+    font-size: 3.5vw;
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .navBar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .taskPlace {
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .heading {
+    font-size: 5vw;
+  }
+
+  .list {
+    font-size: 4.5vw;
+    padding: 8px 0 8px 15px;
+  }
+
+  .logoutBtn {
+    font-size: 4vw;
+  }
+}

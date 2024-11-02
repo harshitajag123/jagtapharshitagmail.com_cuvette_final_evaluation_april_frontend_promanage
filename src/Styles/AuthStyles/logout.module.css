@@ -1,0 +1,64 @@
+@import "../root.css";
+
+.main{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+}
+
+.popup{
+  width: 30%;
+  height: 20%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px #0000001a;
+  text-align: center;
+
+}
+
+.popup p{
+  font-family: Noto Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.07px;
+  color: rgba(0, 0, 0, 1);
+
+}
+
+.logBtn,.closeBtn{
+  margin: 10px;
+  width: 90%;
+  height: 30%;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 30px;
+
+}
+
+.closeBtn{
+  background-color: #ffffff;
+  border: 1px solid #cf3636;
+  color: #cf3636;
+
+}
+
+.logBtn{
+  background-color: #17a2b8;
+  box-shadow: 0px 2px 12px 0px #82698c33;
+  color: #ffffff;
+ 
+}

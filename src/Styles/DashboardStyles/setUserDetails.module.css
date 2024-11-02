@@ -1,0 +1,120 @@
+@import "../root.css";
+
+.heading{
+  color: #000000;
+  display: flex;
+  align-items: center;
+  height: 10%;
+  font-family: Open Sans;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 29.96px;
+  margin-left: 29px;
+
+}
+.formData{
+
+}
+
+.inputName,.inputEmail{
+ 
+  height: 8vh;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  border: 1.38px solid #d0d0d0;
+  border-radius: 11.03px;
+  padding: 0 10px;
+  
+  margin: 25px 30px;
+
+}
+
+.inputOldPass,
+.inputNewPass{
+
+    height: 8vh;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.38px solid #d0d0d0;
+    border-radius: 11.03px;
+    padding: 0 10px;
+    /* Add padding to make room inside */
+    margin: 25px 30px;
+      
+
+}
+
+
+
+.icon{
+  width: 2vw;
+  height: 2vw;
+  color: #828282;
+  margin-right:2px;
+
+}
+.inputField{
+
+    width: 20vw;
+    border: none;
+    font-family: Open Sans;
+    color: rgba(130, 130, 130, 1);
+    outline: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26.28px;
+    
+    
+
+}
+.eyeBtn{
+  background-color: white;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+
+}
+.eyeIcon{
+  width: 2vw;
+  height: 2vw;
+  color: #828282;
+
+}
+.updateBtn{
+ 
+  margin-top: 2vw;
+  width: 37vw;
+  height: 45px;
+  border-radius: 50px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 19.29px;
+  line-height: 26.28px;
+  background-color: #17a2b8;
+  color: #ffffff;
+  border: 1px solid #17A2B8;
+  cursor: pointer;
+  margin: 30px;
+
+}
+
+/* This code ensures that users don’t see the browser-provided "show password" or "clear" buttons, */
+/* which may conflict with custom styling or functionality you want to control directly */
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-webkit-clear-button,
+input[type="password"]::-webkit-reveal-button {
+  display: none;
+}
+
+input[type="password"]::-moz-clear,
+input[type="password"]::-moz-reveal {
+  display: none;
+}

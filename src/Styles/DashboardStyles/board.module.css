@@ -1,0 +1,455 @@
+@import '../root.css';
+
+/* head part  */
+.boardPg{
+  height: 100%;
+  width: 100%;
+
+}
+.alertDiv{
+  height: 10%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  /* justify-content: ; */
+  padding: 10px;
+
+}
+
+.introDiv{
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.introNameDiv{
+  font-family: Poppins;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  margin-left: 25px;
+
+}
+
+.linkCopied{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 1px solid rgba(72, 193, 181, 1);
+  color: rgba(39, 48, 58, 1);
+  padding: 10px 20px;
+  border-radius: 12px;
+  z-index: 1000;
+  font-family: Poppins;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.4px;
+  background-color: #f6fff9;
+
+}
+
+.currDate{
+  font-family: Poppins;
+  color: #707070;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 25px;
+
+}
+
+.HeadContainer{
+  height: 12%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.boardContainer{
+  font-family: Poppins;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 43.5px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+
+}
+.boardContainer span{
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: rgba(112, 112, 112, 1);
+  margin-left: 18px;
+  cursor: pointer;
+}
+
+/* options part  */
+.selectOptionBox{
+  margin-right: 25px;
+
+}
+.filterOpt{
+  border: none;
+  font-family: Poppins;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+.opt{
+  font-family: Poppins;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+/* task container part  */
+.taskContainer{
+  height: 73%;
+  display: flex;
+  gap: 20px;
+  margin: 0px 20px;
+  overflow-x: auto;
+
+}
+.taskItemContainer{
+  min-width: 300px;
+  height: 96%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: rgba(238, 242, 245, 1);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+}
+
+/* scrolling task contaibners  */
+.taskContainer::-webkit-scrollbar {
+  height: 2px;
+  width:2px
+  /* Height of horizontal scrollbar */
+}
+
+.taskContainer::-webkit-scrollbar-track {
+  background: none;
+  /* Background of the scrollbar track */
+  border-radius: 10px;
+}
+
+.taskContainer::-webkit-scrollbar-thumb {
+  background-color: #9cb7c5;
+  /* Color of the scrollbar handle */
+  border-radius: 5px;
+  border: 0\1px, 0px, 0px, 0px;
+  /* Padding around the scrollbar handle */
+}
+.taskHeading{
+  height: 10%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+.icon{
+  height:20px;
+  width:20px;
+
+}
+.taskHolderBox{
+  height: 90%;
+  width: 100%;
+  overflow-y: auto;
+
+}
+/* .taskBox{
+} */
+
+.taskholderBox::-webkit-scrollbar {
+  height: 2px;
+  width:2px;
+}
+
+.taskHolderBox::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 10px;
+}
+
+.taskHolderBox::-webkit-scrollbar-thumb {
+  background-color: #8daab9cc;
+  border-radius: 10px;
+  border: 1px, 0px, 0px, 0px;
+}
+
+
+.todoHeading{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* task details part  */
+.taskDetails{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  margin-top: 7px;
+}
+
+.task1{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.stylePriority{
+  margin-left: 15px;
+  display: flex;
+
+}
+
+.priorityName{
+  font-family: Poppins;
+  color: rgba(112, 112, 112, 1);
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+  margin-left: 5px;
+}
+
+.highPriority{
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #ff2473;
+
+}
+.mediumPriority{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #18b0ff;
+
+}
+.lowPriority{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #63c05b;
+
+}
+.assignToIcon{
+  font-family: DM Sans;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 11.11px;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 235, 235, 1);
+  border-radius: 50%;
+  padding: 2px;
+  margin-left: 8px;
+
+}
+
+.dotIcon{
+  cursor: pointer;
+  display: flex;
+  margin-right: 20px;
+  position: relative;
+
+}
+
+.dropDownMenu{
+  position: absolute;
+  top: 100%;
+  transform: translateX(-85%);
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1000;
+  padding: 10px;
+  display: block;
+
+}
+.dropDownMenuItem{
+  display: flex;
+  box-sizing: border-box;
+  margin: 10px;
+  padding-right: 70px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+}
+
+.dropDownMenuItem:hover {
+  background: #f0f0f0;
+}
+
+.dropDownMenuItem:nth-child(3) {
+  color: rgba(207, 54, 54, 1);
+  /* Apply red color to the third item (Delete option) */
+}
+
+
+.taskTitle{
+  width: 85%;
+  font-family: Poppins;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.taskTitle::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  z-index: 1;
+  padding: 0px 4px;
+  font-size: 10px;
+}
+
+.taskTitle:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.checkList{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.checklistHeading{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.iconstyle{
+  background-color: rgba(238, 236, 236, 1);
+  color: rgba(118, 117, 117, 1);
+
+}
+
+.listing ul li {
+  margin: 10px 0px;
+  list-style-type: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(226, 226, 226, 1);
+  border-radius: 12px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  /* Break long words if needed */
+  word-break: break-all;
+
+}
+.checkbox{
+  margin-right: 8px;
+
+}
+
+.allBtn{
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.currentDueDate{
+  background-color: #dbdbdb;
+  /* background-color: #6628ec; */
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 12px;
+  font-size: 8px;
+  cursor: pointer;
+
+}
+
+.pastDueDate{
+  background-color: #ce3636;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 12px;
+  font-size: 8px;
+  cursor: pointer;
+
+}
+.completedDueDate{
+  background-color: #63c05b;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 12px;
+  font-size: 8px;
+  cursor: pointer;
+}
+.taskBtns{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.taskBtns button {
+  background-color: rgba(238, 236, 236, 1);
+  border-radius: 8px;
+  padding: 5px;
+  color: rgba(118, 117, 117, 1);
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 12px;
+  font-size: 8px;
+  border: none;
+  cursor: pointer;
+}
+

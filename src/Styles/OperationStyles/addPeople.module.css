@@ -1,0 +1,114 @@
+@import "../root.css";
+
+.AddPeopleModalContainer{
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #303d438c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+.popupModal{
+  width: 40%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #767575;
+  background: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+}
+.AddPeopleModalContainer h2{
+  width: 100%;
+  margin: 20px;
+  font-family: Noto Sans;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27.24px;
+  color: #000000;
+  white-space: normal;
+  /* Allows the text to wrap */
+  word-wrap: break-word;
+}
+.AddPeopleModalContainer input{
+  width: 80%;
+  margin-left: 20px;
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27.24px;
+  padding: 5px;
+  border: 1px solid #767575;
+  color: #00000080;
+  border-radius: 5px;
+}
+
+.AddPeopleModalContainer button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.AddPeopleModalContainer div{
+  margin-left: 15px;
+}
+.successMsgPop{
+  box-sizing: border-box;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.successEmail{
+  list-style-type: none;
+
+}
+.okBtn{
+  background-color: #17a2b8;
+  color: #ffffff;
+  box-shadow: 0px 2px 12px 0px #82698c33;
+  border-radius: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+
+}
+.cancelBtn{
+  width: 45%;
+  color: #cf3636;
+  border: 1px solid #cf3636;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 10px;
+
+}
+.addEmailBtn{
+  width: 45%;
+  color: #ffffff;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #17a2b8;
+  border-radius: 10px;
+  box-shadow: 0px 2px 12px 0px #82698c33;
+  border: none;
+
+}
+.errMsg{
+
+}

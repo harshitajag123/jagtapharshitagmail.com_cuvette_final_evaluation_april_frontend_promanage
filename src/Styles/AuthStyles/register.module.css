@@ -1,0 +1,206 @@
+@import '../root.css';
+
+.mainPg{
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.heading{
+  font-family: Open Sans;
+  color: #343434;
+  font-weight: 600;
+  font-size: 2.5vw;
+  line-height: 5vw;
+
+}
+
+.formData{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px;
+
+}
+
+.inputName, .inputEmail {
+  
+
+  height: 8vh;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  border: 1.38px solid #d0d0d0;
+  border-radius: 11.03px;
+  padding: 0 10px;
+}
+
+
+
+.inputPassword ,.inputConfirmPassword {
+  height: 8vh;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  border: 1.38px solid #d0d0d0;
+  border-radius: 11.03px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+
+
+.icon{
+  margin-left: 8px;
+  color: #828282;
+  margin-right: 8px;
+
+}
+
+.inputField{
+  width: 20vw;
+  outline: none;
+  border: none;
+  font-family: Open Sans;
+  color: #828282;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26.28px;
+
+}
+.errMsg{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #db371f;
+  margin-top: 5px;
+  margin-left: 5px;
+
+}
+.eyeBtn{
+  border:none;
+  background-color: #ffffff;
+  width:2vw;
+  height:2vw;
+  
+
+}
+.eyeIcon{
+  margin-left: auto;
+    /* Align eye icon to the far right */
+    cursor: pointer;
+    color:#828282;
+
+}
+
+.registerBtn{
+  margin-top: 2vw;
+  width: 37vw;
+  height: 45px;
+  border-radius: 50px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 19.29px;
+  line-height: 26.28px;
+  background-color: #17a2b8;
+  color: #ffffff;
+  border: 1px solid #17A2B8;
+  cursor: pointer;
+
+}
+.para{
+  margin-bottom: 20px;
+  color: #828282;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26.28px;
+  text-align: center;
+
+}
+
+.loginbtn{
+  width: 37vw;
+  height: 45px;
+  border-radius: 50px;
+  font-family: Open Sans;
+  font-weight: 500;
+  font-size: 19.29px;
+  line-height: 26.28px;
+  background-color: #ffffff;
+  color: #17A2B8;
+  border: 1px solid #17A2B8;
+  cursor: pointer;
+
+}
+/* Responsive Styles */
+
+/* Large Mobile / Small Tablet: 481px – 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .inputName,
+  .inputEmail,
+  .inputPassword,
+  .inputConfirmPassword {
+    width: 70vw;
+  }
+
+  .registerBtn,
+  .loginbtn {
+    width: 72vw;
+  }
+
+  .inputField {
+    width: 50vw;
+  }
+}
+
+/* Tablets: 769px – 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .inputName,
+  .inputEmail,
+  .inputPassword,
+  .inputConfirmPassword {
+    width: 50vw;
+  }
+
+  .registerBtn,
+  .loginbtn {
+    width: 52vw;
+  }
+
+  .inputField {
+    width: 30vw;
+  }
+}
+
+/* Desktop: 1025px – 1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  .inputName,
+  .inputEmail,
+  .inputPassword,
+  .inputConfirmPassword {
+    width: 30vw;
+  }
+
+  .registerBtn,
+  .loginbtn {
+    width: 32vw;
+  }
+
+  .inputField {
+    width: 20vw;
+  }
+}
+
+
+
