@@ -34,7 +34,7 @@ function TaskPage() {
 					<div className={styles.listPart}>
 						<li className={styles.heading}>
 							<img src={mainIcon} className={styles.icon} />
-							Pro Manage
+							OrganizeIt
 						</li>
 						<ul>
 							<li
